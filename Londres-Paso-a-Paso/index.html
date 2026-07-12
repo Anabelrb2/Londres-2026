@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Londres Paso a Paso</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="cabecera">
+
+    <h1>🇬🇧 Londres Paso a Paso</h1>
+
+    <p>15 – 22 julio · Premier Inn Hammersmith</p>
+
+</header>
+
+<div class="buscador">
+
+    <input
+        type="search"
+        id="buscador"
+        placeholder="🔍 Buscar lugar, restaurante o tienda..."
+        onkeyup="buscarContenido()">
+
+</div>
+
+<main id="contenido">
+
+<section id="inicio" class="pantalla">
+
+    <div class="tarjeta">
+
+<h2>🏨 Hotel</h2>
+
+<p><strong>Premier Inn London Hammersmith<br>(Talgarth Road)</strong></p>
+
+<p>28 Talgarth Road<br>London W6 8DL</p>
+
+<a
+class="mapa"
+target="_blank"
+href="https://www.google.com/maps/search/?api=1&query=Premier+Inn+London+Hammersmith+Talgarth+Road">
+
+📍 Abrir Google Maps
+
+</a>
+
+</div>
+
+    <div class="tarjeta">
+
+<h2>🚇 Transporte cercano</h2>
+
+<p>
+
+<strong>Hammersmith Station</strong><br>
+District • Piccadilly • Circle • Hammersmith & City
+
+</p>
+
+<p>
+
+<strong>Barons Court</strong><br>
+District • Piccadilly
+
+</p>
+
+<p>
+
+🚌 Paradas principales:<br>
+
+Hammersmith Broadway<br>
+North End Road
+
+</p>
+
+</div>
+    <div class="tarjeta">
+
+<h2>✈️ Vuelos</h2>
+
+<p>
+
+🛫 <strong>Ida</strong><br>
+VY7830
+
+</p>
+
+<p>
+
+🛬 <strong>Vuelta</strong><br>
+VY6027
+
+</p>
+
+</div>
+<div class="tarjeta">
+
+<h2>🌍 Información útil</h2>
+<div class="tarjeta">
+
+<h2>🌍 Información útil</h2>
+
+<div class="tarjeta">
+
+<h2>🌦️ Tiempo en Londres</h2>
+
+<p>
+
+Consulta la previsión antes de salir del hotel.
+
+</p>
+
+<a
+class="mapa"
+target="_blank"
+href="https://www.google.com/search?q=tiempo+londres">
+
+🌦️ Ver previsión
+
+</a>
+
+</div>
+
+<p>🕒 Londres: 1 hora menos que España</p>
+
+<p>💳 Pago con tarjeta y Contactless ampliamente aceptado</p>
+
+<p>🚑 Emergencias: 999</p>
+
+</div>
+
+</section>
+
+<section
+id="itinerario"
+class="pantalla oculto">
+
+<h2>📅 Itinerario</h2>
+
+<div id="listaDias">
+
+<!-- Aquí app.js generará automáticamente
+todos los días -->
+
+</div>
+
+</section>
+
+<section
+id="lugares"
+class="pantalla oculto">
+
+<h2>📍 Lugares</h2>
+
+<div id="listaLugares"></div>
+
+</section>
+
+<section
+id="restaurantes"
+class="pantalla oculto">
+
+<h2>🍴 Restaurantes</h2>
+
+<div id="listaRestaurantes"></div>
+
+</section>
+
+<section
+id="metro"
+class="pantalla oculto">
+
+<h2>🚇 Metro</h2>
+
+<div id="listaMetro"></div>
+
+</section>
+
+<section
+id="compras"
+class="pantalla oculto">
+
+<h2>🛍 Compras</h2>
+
+<div id="listaCompras"></div>
+
+</section>
+
+<section
+id="favoritos"
+class="pantalla oculto">
+
+<h2>⭐ Favoritos</h2>
+
+<div id="listaFavoritos"></div>
+
+</section>
+
+</main>
+
+<nav class="menuInferior">
+
+<button onclick="mostrarSeccion('inicio')">
+
+🏠
+
+<span>Inicio</span>
+
+</button>
+
+<button onclick="mostrarSeccion('itinerario')">
+
+📅
+
+<span>Viaje</span>
+
+</button>
+
+<button onclick="mostrarSeccion('lugares')">
+
+📍
+
+<span>Lugares</span>
+
+</button>
+
+<button onclick="mostrarSeccion('restaurantes')">
+
+🍴
+
+<span>Comer</span>
+
+</button>
+
+<button onclick="mostrarSeccion('favoritos')">
+
+⭐
+
+<span>Favoritos</span>
+
+</button>
+</nav>
+
+<script src="datos.js"></script>
+<script src="restaurantes.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
